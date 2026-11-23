@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>到韓國交換：從錄取到抵達｜教學簡報</title>
+<style>
+  :root { --text:#1f2328; --muted:#646a73; --line:#e3e3e3; --card:#f7f7f8;
+          --visa:#4c5bd4; --arc:#c47a12; --nhis:#1d8a5f; --life:#8a3f9e; --warn:#b42318; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:#eceef1; color:var(--text);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; }
+  .deck { position:relative; width:min(100vw, calc(100vh * 16 / 9)); aspect-ratio:16/9; margin:0 auto; top:50%; transform:translateY(-50%); }
+  .slide { position:absolute; inset:0; background:#fff; padding:5.5% 7% 7%; display:none; flex-direction:column; overflow:hidden; }
+  .slide.active { display:flex; }
+  .kicker { font-size:clamp(11px,1.4vw,16px); letter-spacing:.08em; color:var(--muted); margin:0 0 .6em; }
+  .kicker b { color:var(--c,var(--visa)); font-weight:600; }
+  h1 { font-size:clamp(26px,4.6vw,56px); line-height:1.2; margin:0 0 .4em; }
+  h2 { font-size:clamp(20px,3vw,38px); line-height:1.25; margin:0 0 .7em; }
+  p, li, td, th { font-size:clamp(13px,1.85vw,23px); line-height:1.6; }
+  ul { margin:0; padding-left:1.1em; }
+  li { margin:.25em 0; }
+  .fact::after { content:attr(data-src); font-size:.58em; color:var(--muted); border:1px solid var(--line);
+    border-radius:999px; padding:0 .55em; margin-left:.5em; vertical-align:.15em; white-space:nowrap; }
+  .lead { color:var(--muted); font-size:clamp(14px,2vw,24px); }
+  .grid { display:grid; gap:2.2%; flex:1; }
+  .g2 { grid-template-columns:1fr 1fr; } .g3 { grid-template-columns:repeat(3,1fr); } .g5 { grid-template-columns:repeat(5,1fr); }
+  .card { background:var(--card); border-radius:12px; padding:5% 6%; border-top:4px solid var(--c,var(--line)); }
+  .card h3 { margin:0 0 .3em; font-size:clamp(14px,2vw,24px); }
+  .card p { margin:0; font-size:clamp(12px,1.55vw,19px); color:var(--muted); }
+  .alert { background:#fdf0ef; border-left:5px solid var(--warn); padding:2.2% 3%; margin-top:auto; }
+  .alert p { margin:0; } .alert strong { color:var(--warn); }
+  .note { margin-top:auto; font-size:clamp(11px,1.3vw,16px); color:var(--muted); }
+  .flow { display:flex; align-items:stretch; gap:1.2%; margin:3% 0; }
+  .step { flex:1; background:var(--card); border-radius:10px; padding:2.5% 2%; text-align:center; font-size:clamp(12px,1.6vw,20px); }
+  .step small { display:block; color:var(--muted); font-size:.8em; }
+  .arrow { align-self:center; color:var(--muted); font-size:clamp(14px,2vw,26px); }
+  .bar { position:relative; height:clamp(54px,9vw,110px); margin:4% 0 2%; }
+  .bar .seg { position:absolute; top:0; height:45%; border-radius:6px; color:#fff; font-size:clamp(11px,1.4vw,17px); display:flex; align-items:center; padding:0 1%; white-space:nowrap; }
+  .bar .lbl { position:absolute; top:55%; font-size:clamp(11px,1.3vw,16px); color:var(--muted); }
+  table { border-collapse:collapse; width:100%; }
+  th, td { border-bottom:1px solid var(--line); padding:.35em .5em; text-align:left; vertical-align:top; }
+  th { color:var(--muted); font-weight:500; }
+  .check li { list-style:none; margin-left:-1.1em; } .check li::before { content:"☐ "; color:var(--muted); }
+  .cover { justify-content:center; background:#fff; }
+  .cover .tags span { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:.15em .8em; margin:0 .4em .4em 0; font-size:clamp(12px,1.5vw,18px); }
+  nav { position:fixed; right:16px; bottom:12px; display:flex; gap:8px; align-items:center; font-size:14px; color:var(--muted); }
+  nav button { border:1px solid #ccc; background:#fff; border-radius:8px; padding:4px 12px; cursor:pointer; font-size:14px; }
+  .progress { position:absolute; left:0; bottom:0; height:4px; background:var(--visa); transition:width .2s; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide cover active">
+  <p class="kicker">中山大學交換生行前教學 · 以成均館大學（SKKU）2027 春季為例</p>
+  <h1>到韓國交換<br>從錄取到抵達，要辦哪些事？</h1>
+  <p class="lead">給完全沒準備過交換的你：五個主題、一張清單</p>
+  <p class="tags"><span>簽證</span><span>外國人登錄證</span><span>健保</span><span>住宿</span><span>申請與選課</span></p>
+  <p class="note">內容取自 LLM Wiki（6 份來源，5 份官方）。用 ← → 鍵或右下角按鈕翻頁。每個重點後面的小標籤是資料來源編號。</p>
+</section>
+
+<section class="slide">
+  <p class="kicker">開始之前</p>
+  <h2>這份簡報分成五個主題</h2>
+  <div class="grid g5">
+    <div class="card" style="--c:var(--visa)"><h3>① 簽證</h3><p>入境前要辦好的學生簽證</p></div>
+    <div class="card" style="--c:var(--arc)"><h3>② 外國人登錄證</h3><p>在韓國的身分證，90 天內要辦</p></div>
+    <div class="card" style="--c:var(--nhis)"><h3>③ 健保</h3><p>自動加入，但有空窗期</p></div>
+    <div class="card" style="--c:var(--life)"><h3>④ 住宿</h3><p>宿舍不保證、先到先得</p></div>
+    <div class="card" style="--c:var(--muted)"><h3>⑤ 申請與選課</h3><p>資格、選課、學分抵免</p></div>
+  </div>
+  <div class="alert"><p><strong>最常出事的一件事：</strong>拿到外國人登錄證之前離開韓國，學生簽證會失效。第 6 張會詳細說。</p></div>
+</section>
+
+<section class="slide" style="--c:var(--visa)">
+  <p class="kicker"><b>① 簽證</b> · 先看整體流程</p>
+  <h2>學生簽證大概怎麼辦？</h2>
+  <div class="flow">
+    <div class="step">交換校<br>入學許可<small>學校寄出</small></div><div class="arrow">→</div>
+    <div class="step">準備<br>個人文件<small>財力證明等</small></div><div class="arrow">→</div>
+    <div class="step">送件<small>駐台北韓國代表部</small></div><div class="arrow">→</div>
+    <div class="step">核發簽證</div><div class="arrow">→</div>
+    <div class="step">入境韓國</div>
+  </div>
+  <ul>
+    <li class="fact" data-src="S6">上面這張流程圖參考民間整理的資料，只用來幫你理解順序</li>
+    <li class="fact" data-src="G1">實際要交哪些文件、要等多久，以駐台北韓國代表部的公告為準</li>
+  </ul>
+</section>
+
+<section class="slide" style="--c:var(--visa)">
+  <p class="kicker"><b>① 簽證</b> · 簽證類別</p>
+  <h2>交換生要辦哪一種簽證？</h2>
+  <ul>
+    <li class="fact" data-src="S1 S2">D-2-6（D-2 學生簽證中，給校際交換生的類別）</li>
+    <li class="fact" data-src="S2">一定要在<strong>入境前</strong>拿到 D-2 簽證</li>
+    <li class="fact" data-src="S2">用 K-ETA（觀光用的電子旅行許可）入境所產生的問題，學校不負責</li>
+    <li class="fact" data-src="S2">辦簽證要用的CoA（Certificate of Admission，交換校核發的入學許可），2027 春季預計 12 月底到 1 月初才寄出</li>
+  </ul>
+  <div class="alert"><p><strong>為什麼要注意：</strong>拿到 CoA 到 3 月開學只有約兩個月，文件要提早準備好，收到就馬上送件。</p></div>
+</section>
+
+<section class="slide" style="--c:var(--arc)">
+  <p class="kicker"><b>② 外國人登錄證</b> · 是什麼</p>
+  <h2>外國人登錄證：你在韓國的身分證</h2>
+  <ul>
+    <li class="fact" data-src="S2">ARC（Alien Registration Card，外國人登錄證），新名稱是居留卡</li>
+    <li class="fact" data-src="S1 S3 S5">在韓國停留超過 90 天，要在<strong>入境後 90 天內</strong>辦理</li>
+    <li class="fact" data-src="S5">要帶：申請表、護照、6 個月內的證件照、入境後開的在學證明、居住證明、手續費</li>
+    <li class="fact" data-src="S3">SKKU 列出的手續費是 30,000 韓元</li>
+    <li class="fact" data-src="S1 S2">SKKU 每學期有團體申請，但可能要付代辦費</li>
+  </ul>
+</section>
+
+<section class="slide" style="--c:var(--arc)">
+  <p class="kicker"><b>② 外國人登錄證</b> · 最大的坑</p>
+  <h2>拿到卡之前，不能離開韓國</h2>
+  <ul>
+    <li class="fact" data-src="S1 S2">拿到外國人登錄證之前出境，D-2 簽證會失效</li>
+    <li class="fact" data-src="S2">要實際拿到卡片才能出國旅行，建議把旅行排在期中考之後</li>
+    <li class="fact" data-src="S1 S2">核發時間：SKKU 交換生頁寫約 45 天</li>
+    <li class="fact" data-src="S4">SKKU 健保頁寫約 6–8 週</li>
+  </ul>
+  <div class="alert"><p><strong>兩個來源說法不同（C1）：</strong>保守估計抓 2 個月，這段時間都不要安排出國。</p></div>
+</section>
+
+<section class="slide" style="--c:var(--nhis)">
+  <p class="kicker"><b>③ 健保</b> · 自動加入</p>
+  <h2>健保：拿到登錄證時自動加入</h2>
+  <ul>
+    <li class="fact" data-src="S4">NHIS（韓國國民健康保險）從 2021/3/1 起，國際學生一律強制加入</li>
+    <li class="fact" data-src="S1 S2 S4">D-2 學生完成外國人登錄時自動加入，不用自己申請</li>
+    <li class="fact" data-src="S1 S2">保費每月約 USD 60，每月繳</li>
+    <li class="fact" data-src="S4">看病自付：住院 20%，門診 30%–60%</li>
+    <li class="fact" data-src="S2 S4">欠繳保費可能影響簽證延長</li>
+  </ul>
+  <p class="note">SKKU 健保頁的表格另外寫「首次入境日或登錄日」起保（C2），以實際收到的加保通知為準。</p>
+</section>
+
+<section class="slide" style="--c:var(--nhis)">
+  <p class="kicker"><b>③ 健保</b> · 空窗期</p>
+  <h2>為什麼還要自己買私人保險？</h2>
+  <div class="bar">
+    <div class="seg" style="left:0;width:38%;background:var(--warn)">沒有健保</div>
+    <div class="seg" style="left:38%;width:62%;background:var(--nhis)">NHIS 生效</div>
+    <div class="lbl" style="left:0">入境</div>
+    <div class="lbl" style="left:38%">拿到外國人登錄證</div>
+  </div>
+  <ul>
+    <li class="fact" data-src="S4">NHIS 在完成外國人登錄前不生效，辦證期間沒有健保</li>
+    <li class="fact" data-src="S4">學校強烈建議買抵達後 2–3 個月的私人保險</li>
+    <li class="fact" data-src="S2">NHIS 不是全部都給付，例如單人病房費，建議買全額保障的保險</li>
+  </ul>
+</section>
+
+<section class="slide" style="--c:var(--life)">
+  <p class="kicker"><b>④ 住宿</b> · SKKU 宿舍</p>
+  <h2>宿舍不保證，先到先得</h2>
+  <ul>
+    <li class="fact" data-src="S2">宿舍不保證提供，開學前 6 週公布結果</li>
+    <li class="fact" data-src="S2">房間隨機分配，不能換房</li>
+    <li class="fact" data-src="S2">住宿通知只寄給繳齊入學文件的人</li>
+  </ul>
+  <table>
+    <tr><th>宿舍</th><th>費用（4 個月）</th><th>位置與餐</th></tr>
+    <tr><td class="fact" data-src="S2">首爾 C-House、M-House</td><td>約 USD 1,700</td><td>校外，不含餐</td></tr>
+    <tr><td class="fact" data-src="S2">水原 Shin-gwan</td><td>約 USD 1,400</td><td>校內，可加購餐</td></tr>
+  </table>
+</section>
+
+<section class="slide">
+  <p class="kicker"><b>⑤ 申請與選課</b> · 申請資格</p>
+  <h2>誰可以申請？</h2>
+  <ul>
+    <li class="fact" data-src="S1 S2">必須是姊妹校學生，並由母校正式提名</li>
+    <li class="fact" data-src="S1 S2">申請時已在母校讀完至少一學年</li>
+    <li class="fact" data-src="S1 S2">春季學期提名截止 10/15</li>
+    <li class="fact" data-src="S2">GPA 門檻例如 3.0/4.5、2.7/4.3</li>
+    <li class="fact" data-src="S2">英語門檻只限商管主修，例如 IELTS 6.0；其他主修免除</li>
+    <li class="fact" data-src="S2">交換 1 或 2 學期，提名後不能延長</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <p class="kicker"><b>⑤ 申請與選課</b> · 選課與學分</p>
+  <h2>選課先搶先贏，學分抵免先問系上</h2>
+  <ul>
+    <li class="fact" data-src="S2">2 月線上選課，先搶先贏，沒有補選</li>
+    <li class="fact" data-src="S2">每學期最多 18 個 SKKU 學分，約 6–7 門課</li>
+    <li class="fact" data-src="S2">交換生一律以大學部身分修課，修研究所課要另外申請</li>
+    <li class="fact" data-src="S2">學分能不能抵免由母校決定</li>
+  </ul>
+  <div class="alert"><p><strong>行動：</strong>出發前先拿 SKKU 的課程大綱去問系上，哪些課可以抵，免得回國才發現白修。</p></div>
+</section>
+
+<section class="slide">
+  <p class="kicker">整理 · 2027 春季（暫定）</p>
+  <h2>重要日期一覽</h2>
+  <table>
+    <tr><th>時間</th><th>事項</th></tr>
+    <tr><td class="fact" data-src="S2">10/1–10/31</td><td>SKKU 線上申請（10/15 母校提名截止）</td></tr>
+    <tr><td class="fact" data-src="S2">12 月底–1 月初</td><td>收到入學許可，送件辦簽證</td></tr>
+    <tr><td class="fact" data-src="S2">開學前 6 週</td><td>宿舍結果公布</td></tr>
+    <tr><td class="fact" data-src="S2">2 月</td><td>線上選課；2/25 新生說明會</td></tr>
+    <tr><td class="fact" data-src="S2">3/2</td><td>開學（最晚 3/12 抵達）</td></tr>
+    <tr><td class="fact" data-src="S1 S5">入境後 90 天內</td><td>辦外國人登錄證，拿到前不出境</td></tr>
+  </table>
+</section>
+
+<section class="slide">
+  <p class="kicker">帶走這張</p>
+  <h2>出發前自我檢查</h2>
+  <div class="grid g2">
+    <ul class="check">
+      <li>收到 CoA 就送件辦 D-2-6 簽證</li>
+      <li>不要用免簽入境</li>
+      <li>買好抵達後 2–3 個月的私人保險</li>
+      <li>確認宿舍結果，沒抽到要找校外住處</li>
+    </ul>
+    <ul class="check">
+      <li>選課日前準備好志願清單</li>
+      <li>拿課綱問系上學分抵免</li>
+      <li>入境後 90 天內辦外國人登錄證</li>
+      <li>拿到登錄證前不安排出國</li>
+    </ul>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="kicker">資料來源與限制</p>
+  <h2>這份簡報根據的資料</h2>
+  <table>
+    <tr><th>編號</th><th>來源</th><th>等級</th></tr>
+    <tr><td>S1</td><td>SKKU 國際處：交換生計畫頁</td><td>官方</td></tr>
+    <tr><td>S2</td><td>SKKU 2027 春季 Fact Sheet（TU Dresden 轉載）</td><td>官方</td></tr>
+    <tr><td>S3 / S4</td><td>SKKU 國際學生服務處：簽證／健保頁</td><td>官方</td></tr>
+    <tr><td>S5</td><td>Study in Korea（韓國教育部）居留資訊</td><td>官方</td></tr>
+    <tr><td>S6</td><td>Creatrip 簽證流程整理</td><td>二手，只用於流程圖</td></tr>
+  </table>
+  <p class="note">尚待確認：駐台北韓國代表部的交換生簽證文件（G1）、團體申請登錄證的代辦費（G2）、中山版本的 fact sheet（G3）。資料擷取日 2026-11-23，出發前請以最新公告為準。</p>
+</section>
+
+<div class="progress" id="progress"></div>
+</div>
+<nav><button id="prev" aria-label="上一張">←</button><span id="count"></span><button id="next" aria-label="下一張">→</button></nav>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = Math.max(0, Math.min(slides.length - 1, (parseInt(location.hash.slice(1)) || 1) - 1));
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    document.getElementById('count').textContent = (i + 1) + ' / ' + slides.length;
+    document.getElementById('progress').style.width = ((i + 1) / slides.length * 100) + '%';
+    history.replaceState(null, '', '#' + (i + 1));
+  }
+  document.getElementById('prev').onclick = () => show(i - 1);
+  document.getElementById('next').onclick = () => show(i + 1);
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); show(i + 1); }
+    if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); show(i - 1); }
+  });
+  show(i);
+</script>
+</body>
+</html>

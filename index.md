@@ -12,6 +12,16 @@ title: 首頁
   <div class="stage-box"><span class="tag stage-arrival">抵達後</span><strong>當地日常</strong><p>居留、開戶、交通、就醫</p></div>
 </div>
 
+
+## 教學簡報
+
+<div class="cards">
+  <a class="card" href="{{ '/slides/korea-exchange/' | relative_url }}">
+    <h3>到韓國交換：從錄取到抵達</h3>
+    <p>由 LLM Wiki 產生的 14 張教學簡報</p>
+  </a>
+</div>
+
 {% assign groups = "school:學校|country:國家生活|guide:指南" | split: "|" %}
 {% for g in groups %}
 {% assign kv = g | split: ":" %}

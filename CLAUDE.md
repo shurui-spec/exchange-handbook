@@ -79,3 +79,9 @@ status: draft | verified
 - 不新增 `_layouts/` 以外的版型，也不引入外部 CSS/JS 框架。
 - 修改 `_layouts/` 或 `style.css` 前要先說明原因，因為會影響全站。
 - 完成後，用一句話回報：新增或修改了哪些檔案，以及哪些欄位仍是「待確認」。
+
+## 9. LLM Wiki 與教學簡報
+
+- `llm-wiki/` 是知識庫，規則寫在 `llm-wiki/WIKI.md`；修改 Wiki 前先讀那份規則。
+- `slides/<主題>/index.html` 是由 Wiki 產生的教學簡報，單一 HTML 檔，不使用 Jekyll 版型。
+- 產生簡報要照 `llm-wiki/pipeline/workflow.md` 的流程，並通過 `check.py outline` 與 `check.py slides`。
